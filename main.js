@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
     M.MaterialBoxed.init(matete)
     
 })  
-//end
+//end materialize
 
 
 
@@ -30,7 +30,7 @@ document.querySelector('.search1').addEventListener('click', (e)=>{
 document.querySelector('.search2').addEventListener('click', (e)=>{
     document.querySelector('.kilo').focus();
 })
-//end
+//end focus
 
 
 //all google map functions
