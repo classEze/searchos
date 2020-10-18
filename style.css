@@ -1,0 +1,103 @@
+:root{
+    --borderColor:rgba(20,20,20, 0.4);
+    --primaryColor:#0F2552;
+    --warningColor:rgb(235, 31, 31);
+}
+
+.warning{
+    color:var(--warningColor);
+    padding:5px;
+    margin:2px auto;
+    background-color: var(--primaryColor);
+}
+.next,.previous{
+    background-color: var(--primaryColor);
+}
+.news_title, #about{
+    color:var(--warningColor)
+}
+
+.map_container, .hospital{
+    position: relative;
+}
+.map_container h5{
+    font-size: 20px;
+    position: static;
+
+}
+.ontop{
+    position:absolute;
+    color:var(--primaryColor);
+    left:20;
+}
+
+.caro,.video,.symptoms{
+    height:60vh
+}
+.caro img{
+    height:95%;
+    width:90%;
+    border:1px solid var(--borderColor)
+}
+.search_box{
+    height:40vh;
+    width:90vw;
+    margin: 20px auto
+}
+.search_box_map{
+    position:absolute;
+    left:60%;
+    top:3%;
+    color:white;
+    width:40%;
+    height:73%;
+}
+
+.search_form, .search_form_map{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search_text, .search_text_map{
+    color:var(--primaryColor);
+    font-size: 45px;
+    line-height: 100px;
+}
+.kilo ,.kilo_map{
+    width:60% !important;
+    height:60px !important;
+    border:1px solid var(--borderColor) !important;
+    margin-bottom: 25px !important;
+    text-align:center;
+}
+.kilo_map{
+    height:40px;
+}
+.search_text_map{
+    font-size: 35px;
+}
+.button_map{
+    height:40px
+}
+.button, .button_map{
+    width:60%;
+    height:60px !important;
+    font-size: 27px;
+    text-transform: none;
+    color:white;
+    border:none;
+    padding:8px;
+    background-color:var(--primaryColor);
+
+}
+.map{
+    height:50vh
+}
+.my_footer{
+    background-color:var(--primaryColor);
+}
+.nav_link{
+font-size: 20px;
+cursor:pointer
+}

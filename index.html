@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title> SearchHos</title>
+</head>
+<body>
+    <header class="page_header scrollspy" id='top'>
+        <nav class='transparent'>
+        <div class="nav-wrapper card">
+            <a href="#" class="sidenav-trigger hide-on-large" data-target="open"><i class="material-icons black-text">menu</i></a>
+            <a href='#' class="brand-logo center black-text"> SearchHos</a>
+            <ul id='nav-mobile ' class="right hide-on-med-and-down">
+                <li class=""><a href='#top'  data-name='none'  class=' nav_link black-text'>Home</a></li>
+                <li class=""><a href='#about'  data-name='none'  class=' nav_link black-text'>About</a></li>
+                <li class=""><a href='#!' data-name='none'  class='search1 nav_link black-text'>Search</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul id='open' class="sidenav">
+        <li class=""><a  href='#top'  class='sidenav-close  nav_link black-text'>Home</a></li>
+        <li class=""><a  href='#about'  class=' sidenav-close nav_link black-text'>About</a></li>
+        <li class=""><a  href='#!' class='search2 sidenav-close  nav_link search black-text'>Search</a></li>
+    </ul>
+
+    <div class='warning center'><h4 id='animate_opacity'> STAY SAFE...WEAR A MASK</h4></div>
+    </header>
+
+
+    <main class="page_body">
+        <h4  class='hide-on-med-and-up'>Input a radius in meters and click the search button your search results will appear below</h4>
+        <div class="card  search_box hide-on-med-and-up">
+            <form class='search_form'>
+            <span class='search_text'>SearchHos</span>
+            <input type="number" placeholder='Enter a radius in Km' required class="kilo white">
+            <button type='submit' class='button'> Search</button>
+        </form>
+    </div>
+    <span class="row">
+        <div class="col card s12">
+            <ol class='collection with-header result'>
+            </ol>
+        </div>
+</span>
+
+
+
+    <section class="row first_row">
+        <div class="col map_container s12  l6">
+            <div class="map"></div>
+            <div class="card  search_box_map hide-on-small-only">
+                <form class='search_form_map'>
+                <span class='search_text_map'>SearchHos</span>
+                <input type="number" placeholder='Enter a radius in meters' required class="kilo_map white">
+                <button type='submit' class='button_map'> Search</button>
+            </form>
+        </div>
+            <h5 class='hide-on-small-only ontop aproko'></h5>
+        </div>
+
+
+        <div class="col s12 l6 hospital"> 
+            <h4 class='hide-on-large-only'>Discover nearby hospitals, get healthcare on time</h4>
+            <h5 class='hide-on-med-and-down ontop'>Discover nearby hospitals, get healthcare on time.</h5>
+            <img src="images/hospital.jpg" alt="Hospital" class="responsive-img material-boxed">
+        </div>
+    </section>
+
+    <section class="row second_row">
+        <div class="col card s12 m6 l3 symptoms">
+            <ul class='collection with-header'>
+                <li class="collection-header"><h5>Some Covid Symptoms</h5></li>
+                <li class='collection-item'> fever</li>
+                <li class='collection-item'> dry cough</li>
+                <li class='collection-item'>tiredness</li>
+                <li class='collection-item'> aches and pain</li>
+                <li class='collection-item'> diarrhoea</li>
+                <li class='collection-item'> headache</li>
+                <li class='collection-item'> difficulty breathing</li>
+                <li class='collection-item'> chest pain or pressure</li>
+            </ul>
+        </div>
+        <div class="col card s12  push-l6 m6 l3 video">
+            <div class="video-container">
+                <iframe width="483" height="272" src="https://www.youtube.com/embed/5DGwOJXSxqg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media;" allowfullscreen></iframe></div>
+           <div class="card-title"> <p>Some vital info about Covid19 infection in a video. Educate yourself.</p></div>
+            </div>
+           
+        <div class="col card  s12 m12 l6 pull-l3 caro">
+            <h5 class="together"> We are in this together</h5> 
+
+            <div class="carousel1 carousel carousel-slider">
+                <div class="carousel-fixed-item center">
+                    <a class="btn previous">Prev</a>
+                    <a class="btn  next">Next</a>
+                </div>
+                <a href='#!' class="carousel-item">
+                    <img src="images/Covid.jpeg" alt="" class="">
+                </a>
+                <a href='#!' class="carousel-item">
+                    <img src="images/staysafe1.png" alt="" class="">
+                </a>
+                <a href='#!' class="carousel-item">
+                    <img src="images/staysafe2.png" alt="" class="">
+                </a>
+                <a href='#!' class="carousel-item">
+                    <img src="images/staysafe4.jpg" alt="" class="">
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <section class="row third_row">
+        <h3 class='center-align news_title' id='animate_opacity'> Some Covid news for you</h3>
+
+        <div class="col s12 m6 l4 ">
+            <div class="card">
+                    <div class="card-image">
+                    <img src="images/news1.jpg" alt="Thumbnail">
+            </div>
+                <div class="card-content">
+                    <span class="card-title"> Poor numerical literacy linked to greater susceptibility to Covid-19 fake news </span>
+                </div>
+                <div class="card-action">
+                    <a class='' href="https://www.theguardian.com/world/2020/oct/14/poor-numerical-literacy-linked-to-greater-susceptibility-to-covid-19-fake-news" target="_blank" rel="noopener noreferrer">
+                        Read
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l4 ">
+            <div class="card">
+                <div class="card-image">
+                <img src="images/news3.jpg" alt="Thumbnail">
+        </div>
+            <div class="card-content">
+                <span class="card-title"> Evidence mounts that immunity from COVID-19 antibodies has limits </span>
+            </div>
+            <div class="card-action">
+                <a class='' href="https://www.ctvnews.ca/health/coronavirus/evidence-mounts-that-immunity-from-covid-19-antibodies-has-limits-1.5143502" target="_blank" rel="noopener noreferrer">
+                    Read
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="col s12 m6 l4 ">
+            <div class="card">
+                <div class="card-image">
+                <img src="images/news2.jpg" alt="Thumbnail">
+        </div>
+            <div class="card-content">
+                <span class="card-title"> Will COVID-19 become endemic? Here is what we should all know
+                </span>
+            </div>
+            <div class="card-action">
+                <a class='' href="https://www.ctvnews.ca/health/coronavirus/will-covid-19-become-endemic-here-s-what-that-means-1.5144140" target="_blank" rel="noopener noreferrer">
+                    Read
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    </section>
+    </main>
+
+    <footer class="white-text" style='font-size:22px'>
+    <section class="row my_footer">
+        <div class="cols12 center-align section scrollspy" id='about'> About this app</div>
+        <div class="col s12"> This is SearchHos web app built by <a href='http://ochonogoreze.netlify.app' target='_blank'>Eze</a>, a fullstack web developer during the global Covid19 pandemic in 2020 to help in locating health care centers in emergency cases. It is easy to use: just input a number on the text box representing how many meters away you want to search and click the search button. Have a nice time using this feature</div>
+        <div class="col s12 copyright center-align">
+            <div class="sm_icons center-align">
+                <span><a href='http://facebook.com/ochonogor.chibeze'     target='_blank'
+                    class='sm_link'><i class='fa fa-facebook social_icon' style='color:#fff; font-size: 30px;'></i></a></span>
+                <span><a href='http://twitter.com/anymail4eze'     target='_blank'
+                    class='sm_link'><i class='fa fa-twitter social_icon' style='color:#fff; font-size: 30px;' ></i></a></span>
+                <span><a href='https://linkedin.com/in/ochonogor-eze-6b5517195/'     target='_blank'
+                    class='sm_link'><i class='fa fa-linkedin social_icon' style='color:#fff; font-size: 30px;' ></i></a></span>
+                <span><a href='http://github.com/classEze'     target='_blank'
+                     class='sm_link'><i class='fa fa-github social_icon' style='color:#fff; font-size: 30px;' ></i></a></span>
+            </div>
+            
+
+        </div>
+       <a class='right' href="#top">Go to top</a>
+        <div class="col s12 copyright center-align">&copy SearcHos, 2020</div>
+
+
+
+
+    </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js" integrity="sha512-2LEOQqARBlk67mYfoWcJah3Rt1Tan5TYsWUNBPtviIk206eyqQpUSpuBK5S77UFu3Pm+zlJOdw8uP5UfO/AtPw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous"></script> 
+       <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw-rypAWlPW5Vhds1rwkYI8VSaqS5PKx8&libraries=places&callback=initialize"></script>
+<script src="main.js"></script>
+</body>
+</html>
