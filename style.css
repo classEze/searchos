@@ -22,8 +22,6 @@
 }
 .map_container h5{
     font-size: 20px;
-    position: static;
-
 }
 .ontop{
     position:absolute;
@@ -76,7 +74,8 @@
     height:40px;
 }
 .search_text_map{
-    font-size: 35px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .button_map{
     height:40px
